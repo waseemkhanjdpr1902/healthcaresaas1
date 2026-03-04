@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - HealthCareer Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-stethoscope"></i>
+                <span>HealthCareer<span style="color: var(--primary);">Pro</span></span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="cme-tracker.html" class="nav-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>CME Tracker</span>
+                </a>
+                <a href="resume-builder.html" class="nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>CV Builder</span>
+                </a>
+                <a href="ats-checker.html" class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>ATS Checker</span>
+                </a>
+                <a href="ai-guidance.html" class="nav-item">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Guidance</span>
+                </a>
+                <a href="data-flow.html" class="nav-item">
+                    <i class="fas fa-tasks"></i>
+                    <span>Data Flow</span>
+                </a>
+                <a href="interview-prep.html" class="nav-item">
+                    <i class="fas fa-video"></i>
+                    <span>Interview Prep</span>
+                </a>
+                <a href="pricing.html" class="nav-item">
+                    <i class="fas fa-crown"></i>
+                    <span>Subscription</span>
+                </a>
+                <a href="#" class="nav-item" id="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="dashboard-header">
+                <div class="header-title">
+                    <h1>Welcome back, Dr. Smith</h1>
+                    <p>Here's what's happening with your career today</p>
+                </div>
+                <div class="user-menu">
+                    <div class="user-info">
+                        <div class="user-name">Dr. Sarah Smith</div>
+                        <div class="user-role">Cardiologist • Premium Member</div>
+                    </div>
+                    <div class="avatar">SS</div>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Total CME Credits</h3>
+                        <div class="stat-number">156</div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+24 this year</span>
+                        </div>
+                    </div>
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Active Applications</h3>
+                        <div class="stat-number">8</div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+3 this week</span>
+                        </div>
+                    </div>
+                    <div class="stat-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>CV ATS Score</h3>
+                        <div class="stat-number">92</div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+12% improvement</span>
+                        </div>
+                    </div>
+                    <div class="stat-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Interviews Ready</h3>
+                        <div class="stat-number">4</div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-check"></i>
+                            <span>Prepared this month</span>
+                        </div>
+                    </div>
+                    <div class="stat-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Section -->
+            <div class="progress-section">
+                <div class="progress-header">
+                    <h3>License Renewal Progress</h3>
+                    <span class="progress-percent">78% Complete</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 78%"></div>
+                </div>
+                <p style="margin-top: 1rem; color: var(--gray);">50 credits needed • You have 39 credits this year</p>
+            </div>
+
+            <!-- Recent CME Activities Table -->
+            <div class="table-container">
+                <div class="table-header">
+                    <h3>Recent CME Activities</h3>
+                    <a href="cme-tracker.html" class="btn btn-outline">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>Date</th>
+                            <th>Credits</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Advances in Cardiology 2024</td>
+                            <td>Mar 15, 2024</td>
+                            <td>12</td>
+                            <td>AMA PRA Category 1</td>
+                            <td><span class="badge badge-success">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Heart Failure Symposium</td>
+                            <td>Mar 10, 2024</td>
+                            <td>8</td>
+                            <td>AMA PRA Category 1</td>
+                            <td><span class="badge badge-success">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>ECG Interpretation Workshop</td>
+                            <td>Mar 5, 2024</td>
+                            <td>4</td>
+                            <td>Self-assessment</td>
+                            <td><span class="badge badge-warning">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>Clinical Research Methods</td>
+                            <td>Feb 28, 2024</td>
+                            <td>10</td>
+                            <td>Other</td>
+                            <td><span class="badge badge-success">Verified</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('logout')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
